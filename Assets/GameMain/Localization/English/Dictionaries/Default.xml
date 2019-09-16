@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Dictionaries>
+    <Dictionary Language="English">
+        <String Key="Param.interface" Value="Interface" />
+        <String Key="Param.phyinterface" Value="Physic Interface" />
+        <String Key="Param.subinterface" Value="Sub Interface" />
+        <String Key="Param.vlaninterface" Value="VLAN Interface" />
+        <String Key="Param.loopback" Value="Loopback Config" />
+        <String Key="Param.staticroute" Value="Static Route" />
+        <String Key="Param.ospf_config" Value="OSPF Config" />
+        <String Key="Param.ospf_global" Value="OSPF Global" />
+        <String Key="Param.ospfroute" Value="OSPF Route" />
+        <String Key="Param.ospf_area" Value="OSPF Area" />
+        <String Key="Param.ospf_interface" Value="OSPF Config" />
+        <String Key="Param.dhcp" Value="DHCP Config" />
+        <String Key="Param.dhcpglobal" Value="DHCP Global" />
+        <String Key="Param.dhcpinterface" Value="DHCP Config" />
+        <String Key="Param.acl" Value="ACL Config" />
+        <String Key="Param.acl_standard" Value="ACL Standard" />
+        <String Key="Param.acl_extend" Value="ACL Extend" />
+        <String Key="Param.acl_interface" Value="ACL Interface" />
+        <String Key="Param.acl_level2" Value="ACL Level2" />
+        <String Key="Param.nat" Value="NAT Config" />
+        <String Key="Param.natgloabl" Value="NAT Gloabl" />
+        <String Key="Param.natinterface" Value="NAT Interface" />
+    </Dictionary>
+</Dictionaries>

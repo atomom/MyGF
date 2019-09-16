@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Dictionaries>
+    <Dictionary Language="ChineseSimplified">
+        <String Key="Param.interface" Value="接口配置" />
+        <String Key="Param.phyinterface" Value="物理接口配置" />
+        <String Key="Param.subinterface" Value="子接口配置" />
+        <String Key="Param.vlaninterface" Value="VLAN三层接口配置" />
+        <String Key="Param.loopback" Value="Loopback接口配置" />
+        <String Key="Param.staticroute" Value="静态路由配置" />
+        <String Key="Param.ospf_config" Value="OSPF配置" />
+        <String Key="Param.ospf_global" Value="OSPF全局配置" />
+        <String Key="Param.ospfroute" Value="OSPF路由配置" />
+        <String Key="Param.ospf_area" Value="OSPF区域配置" />
+        <String Key="Param.ospf_interface" Value="OSPF接口配置" />
+        <String Key="Param.dhcp" Value="DHCP配置" />
+        <String Key="Param.dhcpglobal" Value="DHCP全局配置" />
+        <String Key="Param.dhcpinterface" Value="DHCP接口配置" />
+        <String Key="Param.acl" Value="ACL配置" />
+        <String Key="Param.acl_standard" Value="标准ACL配置" />
+        <String Key="Param.acl_extend" Value="扩展ACL" />
+        <String Key="Param.acl_interface" Value="ACL接口配置" />
+        <String Key="Param.acl_level2" Value="二层ACL配置" />
+        <String Key="Param.nat" Value="NAT配置" />
+        <String Key="Param.natglobal" Value="NAT全局配置" />
+        <String Key="Param.natinterface" Value="NAT接口配置" />
+        <String Key="Param.ospf_announce" Value="路由宣告" />
+        <String Key="Param.ospf_redistribute" Value="重分发" />
+        <String Key="Param.ospf_conver" Value="路由汇聚" />
+        <String Key="Param.ospf_default" Value="默认路由" />
+        <String Key="Param.natpool" Value="NAT地址池" />
+        <String Key="Param.dynamicnat" Value="动态NAT" />
+        <String Key="Param.staticnat" Value="静态NAT" />
+        <String Key="Param.openflow" Value="OpenFlow配置" />
+        <String Key="Param.openflowglobal" Value="OpenFlow全局配置" />
+        <String Key="Param.openflowinterface" Value="OpenFlow接口配置" />
+        <String Key="Param.vxlan" Value="VXLAN配置" />
+        <String Key="Param.l2vpnvsi" Value="L2VPN-VSI配置" />
+        <String Key="Param.gateway" Value="VXLAN网关配置" />
+        <String Key="Param.gatewayfocuse" Value="集中式网关配置" />
+        <String Key="Param.gatewaydis" Value="分布式网关配置" />
+        <String Key="Param.acport" Value="AC接口关联VSI配置" />
+        <String Key="Param.acportglobal" Value="全局配置" />
+        <String Key="Param.acportinterface" Value="接口配置" />
+        <String Key="Param.vxlanassist" Value="VXLAN辅助功能配置" />
+        <String Key="Param.vxlanglobal" Value="全局辅助配置" />
+        <String Key="Param.macstatic" Value="远端静态MAC绑定" />
+        <String Key="Param.vxlanvsi" Value="VSI泛洪抑制参数设备" />
+        <String Key="Param.vsinhibition" Value="静态路由配置" />
+        <String Key="Param.vxlanglobalset" Value="全局配置" />
+        <String Key="Param.vxlanvrf" Value="VRF配置" />
+        <String Key="Param.vxlanacport" Value="AC端口配置" />
+        <String Key="Param.vxlantunnel" Value="VXLAN隧道配置" />
+        <String Key="Param.vxlangateway" Value="IP网关配置" />
+        <String Key="Param.vxlanvsiset" Value="VSI配置" />
+        <String Key="Param.vxlanroute" Value="路由配置" />
+        <String Key="PopMsgType.IpInvalid" Value="配置了无效的IP地址。" />
+        <String Key="PopMsgType.MaskInvalid" Value="配置了无效的子网掩码。" />
+        <String Key="PopMsgType.NetAddOverlapping" Value="网络地址重叠。" />
+        <String Key="PopMsgType.NetAddInvalid" Value="配置了无效的网络地址。" />
+        <String Key="PopMsgType.WildInvalid" Value="配置了无效的通配符。" />
+        <String Key="PopMsgType.IpAddDuplicated" Value="IP地址重复。" />
+        <String Key="PopMsgType.IpConflicts" Value="IP冲突。" />
+        <String Key="PopMsgType.InterfaceIdAlreadyExists" Value="接口配置已经存在" />
+        <String Key="PopMsgType.VlanTaggedInvalid" Value="配置了无效的VLAN标识。" />
+        <String Key="PopMsgType.NextHopInvalid" Value="下一跳无效。" />
+        <String Key="PopMsgType.PortInvalid" Value="端口无效。" />
+        <String Key="PopMsgType.DesIpNoMathMask" Value="目的地址与子网掩码不匹配。" />
+        <String Key="PopMsgType.PleaseSelNat" Value="请选择NAT。" />
+        <String Key="PopMsgType.PleaseSelBindingDir" Value="请选择绑定方向。" />
+        <String Key="PopMsgType.NatAlreadyExsit" Value="NAT已存在。" />
+        <String Key="PopMsgType.AclAlreadyExsit" Value="ACL已存在。" />
+        <String Key="PopMsgType.IncompleteDataCfg" Value="数据配置不完整。" />
+        <String Key="PopMsgType.PleaseSelProtocol" Value="请选择协议。" />
+        <String Key="PopMsgType.RuleCantBeNull" Value="Rule不能为空。" />
+        <String Key="PopMsgType.RuleAlreadyExsit" Value="Rule已存在。" />
+        <String Key="PopMsgType.OutIpPortIpConflict" Value="外部IP与接口IP冲突。" />
+        <String Key="PopMsgType.AddressPoolOverlapping" Value="地址池重复。" />
+        <String Key="PopMsgType.VlanIdCantBeNull" Value="VLAN ID不能为空。" />
+        <String Key="PopMsgType.VlanIdAlreadyExsit" Value="VLAN ID重复。" />
+        <String Key="PopMsgType.CostCantBeNull" Value="Cost不能为空。" />
+        <String Key="PopMsgType.PleaseInputKey" Value="请输入密钥。" />
+        <String Key="PopMsgType.SrcIpCantBeNull" Value="源IP配置无效。" />
+        <String Key="PopMsgType.DesIpCantBeNull" Value="目的IP不能为空。" />
+        <String Key="PopMsgType.IpStaticRouteNexthopConflict" Value="IP地址与静态路由下一跳IP地址冲突。" />
+        <String Key="PopMsgType.RouterIdInvalid" Value="Router Id 格式不正确。" />
+        <String Key="PopMsgType.ProcessNumCantBeNull" Value="进程号不能为空。" />
+        <String Key="PopMsgType.DnsInvalid" Value="DNS无效。" />
+        <String Key="PopMsgType.GatewayInvalid" Value="网关无效。" />
+        <String Key="PopMsgType.AreaInvalid" Value="区域配置无效。" />
+        <String Key="PopMsgType.Null" Value="当前无配置数据。" />
+        <String Key="PopMsgType.ReferenceBandwidth" Value="参考宽带数据不能为空。" />
+        <String Key="PopMsgType.Lease" Value="地址租约必须>=0。" />
+        <String Key="PopMsgType.PoolName" Value="地址名称重复。" />
+        <String Key="PopMsgType.LoopbackID" Value="LoopbackID重复。" />
+        <String Key="PopMsgType.OFinterfaceCantBeNull" Value="OpenFlow协议接口不能为空" />
+        <String Key="PopMsgType.NameDuplicated" Value="名称不能重复" />
+        <String Key="PopMsgType.NameCantBeNull" Value="名称不能为空" />
+        <String Key="PopMsgType.OpenFlowTableExist" Value="该流表项已经存在" />
+        <String Key="PopMsgType.ActionCantBeNull" Value="该流表项指令不能为空" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.PortId" Value="接口ID" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.LightOrEle" Value="光 / 电" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.PortState" Value="接口状态" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.ManageState" Value="管理状态" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.Ip" Value="IP地址" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.Mask" Value="掩码" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.MTU" Value="MTU" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.WorkMode" Value="工作模式" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.Duplex" Value="双工" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.Speed" Value="速率" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Head.Description" Value="接口描述" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.OptOrEle.Opt" Value="光" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.OptOrEle.Ele" Value="电" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.Negot.Auto" Value="自协商" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.Negot.Force" Value="强制" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.Duplex.Full" Value="全双工" />
+        <String Key="EquAtt.DataSet.PhyPortTab.Option.Duplex.Half" Value="半双工" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.DesIp" Value="目的地址" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.Mask" Value="子网掩码" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.NextHop" Value="下一跳" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.OutPort" Value="出接口" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.Priority" Value="优先级" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Head.Operation" Value="操作" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Option.LoadBalance.On" Value="开启" />
+        <String Key="EquAtt.DataSet.StaticRouteTab.Option.LoadBalance.Off" Value="关闭" />
+        <String Key="EquAtt.DataSet.DHCPPortTab.Option.ServiceType.Server" Value="服务器" />
+        <String Key="EquAtt.DataSet.DHCPPortTab.Option.ServiceType.Relay" Value="中继" />
+        <String Key="Login.userName" Value="用户名：" />
+        <String Key="Login.password" Value="登录密码：" />
+        <String Key="Login.account" Value="没有账号" />
+        <String Key="Login.forgetPassword" Value="忘记密码" />
+        <String Key="Login.login" Value="登录" />
+        <String Key="Login.exit" Value="退出" />
+        <String Key="Login.ver" Value="Version" />
+        <String Key="Login.official" Value="官网" />
+        <String Key="Login.language" Value="语言：" />
+        <String Key="Free.scene.build" Value="建筑物" />
+        <String Key="Free.scene.room" Value="机房" />
+        <String Key="Free.scene.lines" Value="线缆" />
+        <String Key="Free.room.cabinet" Value="机柜" />
+        <String Key="Free.room.equ" Value="设备" />
+        <String Key="Free.room.board" Value="单板" />
+        <String Key="Free.room.module" Value="光模块" />
+        <String Key="Free.room.lines" Value="线缆" />
+        <String Key="Free.scene.fun1.record" Value="档案" />
+        <String Key="Free.scene.fun1.message" Value="消息" />
+        <String Key="Free.scene.fun1.rank" Value="排行榜" />
+        <String Key="Free.scene.fun1.friend" Value="好友" />
+        <String Key="Free.scene.fun1.share" Value="分享" />
+        <String Key="Free.scene.fun1.sys" Value="系统" />
+        <String Key="Free.scene.fun2.plan" Value="拓扑规划" />
+        <String Key="Free.scene.fun2.autoPlan" Value="自动拓扑" />
+        <String Key="Free.scene.fun2.netPlan" Value="网络规划" />
+        <String Key="Free.scene.fun2.alarm" Value="告警" />
+        <String Key="Free.scene.fun2.viewPoint" Value="切换视角" />
+        <String Key="Rack_19_large_normsDes" Value="42U，其中1U=4.445cm" />
+        <String Key="Rack_19_large_sceneDes" Value="适用于小型机房、中型机房及大型机房" />
+        <String Key="Rack_19_large_rackTypeDes" Value="19英寸指机柜内宽度为（48.26cm=19英寸)，机柜高度范围0.35-2m，软件中19英寸标准机柜高为2m" />
+        <String Key="Rack_19_large_mainFunDes" Value="用于放置路由器、交换机、服务器等设备，并具有抗振动、抗冲击、防火防磁等特性，以保证设备稳定可靠的工作" />
+        <String Key="Rack_19_large_faceTypeDes" Value="" />
+        <String Key="Rack_19_large_faceDecayDes" Value="0" />
+        <String Key="ODF_normsDes" Value="70口ODF架" />
+        <String Key="ODF_sceneDes" Value="" />
+        <String Key="ODF_rackTypeDes" Value="" />
+        <String Key="ODF_mainFunDes" Value="保护光缆纤芯及尾纤，实现光纤线路的连接、调度及分配" />
+        <String Key="ODF_faceTypeDes" Value="FC" />
+        <String Key="ODF_faceDecayDes" Value="0.5db" />
+        <String Key="NDF_normsDes" Value="70口NDF架" />
+        <String Key="NDF_sceneDes" Value="适用于中型机房及大型机房" />
+        <String Key="NDF_rackTypeDes" Value="" />
+        <String Key="NDF_mainFunDes" Value="保护电缆，实现电缆线路的连接、调度及分配" />
+        <String Key="NDF_faceTypeDes" Value="RJ45" />
+        <String Key="NDF_faceDecayDes" Value="0" />
+        <String Key="IDF_normsDes" Value="35口NDF架和35口NDF架" />
+        <String Key="IDF_sceneDes" Value="" />
+        <String Key="IDF_rackTypeDes" Value="" />
+        <String Key="IDF_mainFunDes" Value="保护光缆纤芯及尾纤，实现光纤线路的连接、调度及分配和保护电缆，实现电缆线路的连接、调度及分配" />
+        <String Key="IDF_faceTypeDes" Value="FC/RJ45" />
+        <String Key="IDF_faceDecayDes" Value="" />
+        <String Key="LC-LC-S_des" Value="即两头LC（Lucent Connector）朗讯连接器的单模尾纤（一般用黄色线缆表示）单模光纤（SMF,Single Mode Fiber）,纤芯较细为9μm，一般由石英（玻璃）或塑料加工而成，只能传一种模式的光。因此色散很小，适合远距离传输，传输距离可达到50-100km" />
+        <String Key="LC-LC-S_sceneDes" Value="适用于两端为单模的SFP、SFP+模块" />
+        <String Key="LC-LC-S_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="LC-FC-S_des" Value="即一头LC（Lucent Connector）朗讯连接器，一头 FC(Ferrule Connector)金属连接件的单模尾纤（一般用黄色线缆表示）单模光纤（SMF,Single Mode Fiber）,纤芯较细为9μm，一般由石英（玻璃）或塑料加工而成，只能传一种模式的光。因此色散很小，适合远距离传输，传输距离可达到50-100km" />
+        <String Key="LC-FC-S_sceneDes" Value="适用于一端为单模的SFP、SFP+模块；一端为ODF配线架" />
+        <String Key="LC-FC-S_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="LC-LC-M_des" Value="即两头LC（Lucent Connector）朗讯连接器的单模尾纤（一般用橙色线缆表示）多模光纤（MMF,Multi Mode Fiber）,纤芯较粗为50/62.5μm，可传多钟模式的光。但因其色散较大，且色散会随着传输距离的增加而增大。多模光纤有效传输距离只有2-4km" />
+        <String Key="LC-LC-M_sceneDes" Value="适用于两端为多模的SFP、SFP+模块" />
+        <String Key="LC-LC-M_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="LC-FC-M_des" Value="即一头LC（Lucent Connector）朗讯连接器，一头 FC(Ferrule Connector)金属连接件的单模尾纤（一般用橙色线缆表示）" />
+多模光纤（        <String Key="MMF,Multi Mode Fiber）,纤芯较粗为50/62.5μm，可传多钟模式的光。但因其色散较大，且色散会随着传输距离的增加而增大。多模光纤有效传输距离只有2-4km" Value="null" />
+        <String Key="LC-FC-M_sceneDes" Value="适用于一端为多模的SFP、SFP+模块；一端为ODF配线架" />
+        <String Key="LC-FC-M_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="FC-FC-S_des" Value="即两头FC(Ferrule Connector)金属连接件的单模尾纤（一般用黄色线缆表示）单模光纤（SMF,Single Mode Fiber）,纤芯较细为9μm，一般由石英（玻璃）或塑料加工而成，只能传一种模式的光。因此色散很小，适合远距离传输，传输距离可达到50-100km" />
+        <String Key="FC-FC-S_sceneDes" Value="适用于两端为ODF配线架" />
+        <String Key="FC-FC-S_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="FC-FC-M_des" Value="即两头LC（Lucent Connector）朗讯连接器的单模尾纤（一般用橙色线缆表示）多模光纤（MMF,Multi Mode Fiber）,纤芯较粗为50/62.5μm，可传多钟模式的光。但因其色散较大，且色散会随着传输距离的增加而增大。多模光纤有效传输距离只有2-4km" />
+        <String Key="FC-FC-M_sceneDes" Value="适用于两端为多模的SFP、SFP+模块" />
+        <String Key="FC-FC-M_meritDes" Value="传输速度快；传输距离远；不受电磁干扰；不导电不易引起安全隐患；安全性较高等。缺点是弯曲会增加光衰，过度弯曲纤芯易折断。" />
+        <String Key="RJ45-S_des" Value="即由单条以太网所组成的以太网电缆" />
+        <String Key="RJ45-S_sceneDes" Value="适用于PC、服务器、交换机等带网口设备的连接" />
+        <String Key="RJ45-S_meritDes" Value="" />
+        <String Key="RJ45-S_specialtyDes" Value="价格便宜；应用范围广" />
+        <String Key="RJ45-S_constituteDes" Value="以太网线的RJ45接头为8针连接器，共有8芯组成。" />
+        <String Key="RJ45-S_faceTypeDes" Value="一种是T-568B，另一种是T-568A。两头为T-568B的为直通线，主要用于不同种设备之间连接。一头T-568B，一头T-568A的为交叉线，主要用于同种设备之间连接。软件中对直通线及交叉线不做区分" />
+        <String Key="RJ45-MC_des" Value="即由多条以太网所组成的以太网电缆" />
+        <String Key="RJ45-MC_sceneDes" Value="" />
+        <String Key="RJ45-MC_meritDes" Value="" />
+        <String Key="RJ45-MC_specialtyDes" Value="价格便宜；应用范围广" />
+        <String Key="RJ45-MC_constituteDes" Value="一种是T-568B，另一种是T-568A。两头为T-568B的为直通线，主要用于不同种设备之间连接。一头T-568B，一头T-568A的为交叉线，主要用于同种设备之间连接。软件中对直通线及交叉线不做区分。" />
+        <String Key="RJ45-MC_faceTypeDes" Value="以太网线的RJ45接头为8针连接器，共有8芯组成。" />
+        <String Key="MFC-MFC-S-MC_des" Value="即由多束单模光纤所组成的光缆，用于两个ODF配线架间连接。单模光纤（SMF,Single Mode Fiber）,纤芯较细为9μm，一般由石英（玻璃）或塑料加工而成，只能传一种模式的光。因此色散很小，适合远距离传输，有效传输距离可达到50-100km" />
+        <String Key="MFC-MFC-S-MC_sceneDes" Value="" />
+        <String Key="MFC-MFC-S-MC_meritDes" Value="" />
+        <String Key="MFC-MFC-S-MC_specialtyDes" Value="低损耗；高带宽；可适应不同外在环境铺设" />
+        <String Key="MFC-MFC-S-MC_constituteDes" Value="光缆主要由缆芯、加强元件和护层三部分组成。" />
+        <String Key="MFC-MFC-S-MC_faceTypeDes" Value="常见的光缆结构有层绞式、骨架式、中心束管式和带状式" />
+        <String Key="MFC-MFC-M-MC_des" Value="即由多束多模光纤所组成的光缆，用于两个ODF配线架间连接。多模光纤（MMF,Multi Mode Fiber）,纤芯较粗为50/62.5μm，可传多钟模式的光。但因其色散较大，且色散会随着传输距离的增加而增大。有效传输距离只有2-4km" />
+        <String Key="MFC-MFC-M-MC_sceneDes" Value="" />
+        <String Key="MFC-MFC-M-MC_meritDes" Value="" />
+        <String Key="MFC-MFC-M-MC_specialtyDes" Value="低损耗；高带宽；可适应不同外在环境铺设" />
+        <String Key="MFC-MFC-M-MC_constituteDes" Value="光缆主要由缆芯、加强元件和护层三部分组成。" />
+        <String Key="MFC-MFC-M-MC_faceTypeDes" Value="常见的光缆结构有层绞式、骨架式、中心束管式和带状式" />
+        <String Key="S13-GE-10KM-SFP_sceneDes" Value="适用于连接单模LC接口的光纤及支持SFP的插槽" />
+        <String Key="S13-GE-10KM-SFP_specialtyDes" Value="该模块为光收发一体模块，是光通信的核心器件，完成对光信号的光-电/电-光的转换" />
+        <String Key="S13-XGE-10KM-SFP+_sceneDes" Value="适用于连接单模LC接口的光纤及支持SFP+的插槽" />
+        <String Key="S13-XGE-10KM-SFP+_specialtyDes" Value="该模块为光收发一体模块，是光通信的核心器件，完成对光信号的光-电/电-光的转换" />
+        <String Key="M85-GE-500M-SFP_sceneDes" Value="适用于连接多模LC接口的光纤及支持SFP的插槽" />
+        <String Key="M85-GE-500M-SFP_specialtyDes" Value="该模块为光收发一体模块，是光通信的核心器件，完成对光信号的光-电/电-光的转换" />
+        <String Key="M85-XGE-300M-SFP+_sceneDes" Value="适用于连接多模LC接口的光纤及支持SFP+的插槽" />
+        <String Key="M85-XGE-300M-SFP+_specialtyDes" Value="该模块为光收发一体模块，是光通信的核心器件，完成对光信号的光-电/电-光的转换" />
+        <String Key="RT-S_sceneDes" Value="主要用于网络的接入层，适用于小型企业、分支机构等" />
+        <String Key="RT-S_specialtyDes" Value="小型路由器采用双核CPU。工作在OSI第三层即网络层，提供寻址功能。主要作用是通过转发数据包，连接Internet中各局域网、广域网的设备，让不同网段的主机相互通信。" />
+        <String Key="RT-M_sceneDes" Value="主要用于网络的汇聚层，适用于大中型企业总部或分支、大中型园区出口等" />
+        <String Key="RT-M_specialtyDes" Value="中型路由器采用基于分布式的多核多线程处理器和大容量crossbar无阻塞交换技术。路由器一般工作在OSI第三层即网络层，提供寻址功能。主要作用是通过转发数据包，连接Internet中各局域网、广域网的设备，让不同网段的主机相互通信" />
+        <String Key="SW-S_sceneDes" Value="主要应用于网络中的接入层，使用于中小型企业、学校、酒店等" />
+        <String Key="SW-S_specialtyDes" Value="小型交换机采用双核处理器，提供多个接口用于连接设备，为其提供数据包的转发/过滤" />
+        <String Key="SW-S_EquTypeDes" Value="交换机主要分为二层及三层交换机，软件中交换机均为三层交换机" />
+        <String Key="SW-M_sceneDes" Value="主要应用于网络中的汇聚层，适用于大中型企业及园区" />
+        <String Key="SW-M_specialtyDes" Value="中型交换机采用基于分布式的多核多线程处理器，通过主引擎和分布式高速业务接口板内置的交换芯片实现板内二、三层数据包的转发过滤" />
+        <String Key="SW-M_EquTypeDes" Value="交换机主要分为二层及三层交换机，软件中交换机均为三层交换机" />
+        <String Key="RT-4-RJ45-D" Value="4口千兆RJ45网口单板" />
+        <String Key="RT-4xGE-SFP-D" Value="4口千兆光口单板" />
+        <String Key="RT-8xGE-SFP-D" Value="8口千兆光口单板" />
+        <String Key="RT-8xGE-RJ45-D" Value="8口千兆RJ45网口单板" />
+        <String Key="RT-4x10GE-SFP+-D" Value="4口万兆光口单板" />
+        <String Key="SW-16xGE-SFP-D" Value="16口千兆光口单板" />
+        <String Key="SW-16xGE-RJ45-D" Value="16口千兆RJ45网口单板" />
+        <String Key="SW-4x10GE-SFP+-D" Value="4口万兆光口单板" />
+        <String Key="RT-4xGE-RJ45-CJ" Value="适用于RT-S小型路由器" />
+        <String Key="RT-4xGE-SFP-CJ" Value="适用于RT-S小型路由器" />
+        <String Key="RT-8xGE-SFP-CJ" Value="适用于RT-M中型路由器" />
+        <String Key="RT-8xGE-RJ45-CJ" Value="适用于RT-M中型路由器" />
+        <String Key="RT-4x10GE-SFP+-CJ" Value="适用于RT-M中型路由器" />
+        <String Key="SW-16xGE-SFP-CJ" Value="适用于SW-M中型交换机" />
+        <String Key="SW-16xGE-RJ45-CJ" Value="适用于SW-M中型交换机" />
+        <String Key="SW-4x10GE-SFP+-CJ" Value="适用于SW-M中型交换机" />
+        <String Key="SW-16xGE-HYBRID-D" Value="16口千兆光电混合SDN单板" />
+        <String Key="RT-8xGE-HYBRID-D" Value="8口千兆光电混合SDN单板" />
+        <String Key="SW-16xGE-HYBRID-CJ" Value="适用于SW-M中型交换机" />
+        <String Key="RT-8xGE-HYBRID-CJ" Value="适用于RT-M中型路由器" />
+        <String Key="MediumRoom-area" Value="约100平方米" />
+        <String Key="SmallRoom-area" Value="约20平方米" />
+        <String Key="MediumRoom-jg" Value="中型机房最多可拖放4个19英寸标准机柜，默认存在一个ODF机柜及一个NDF机柜" />
+        <String Key="SmallRoom-jg" Value="小型机房最多可拖放2个19英寸标准机柜，默认存在一个IDF机柜" />
+        <String Key="MediumRoom-in" Value="空调两台、烟感器、监控、消防气瓶" />
+        <String Key="SmallRoom-in" Value="空调、消防气瓶" />
+        <String Key="MediumRoom-hj" Value="机房温度保持在23℃±5℃，相对湿度保持在45-65%" />
+        <String Key="SmallRoom-hj" Value="机房温度保持在23℃±5℃，相对湿度保持在45-65%" />
+        <String Key="MediumRoom-cd" Value="机房应选择具有防雷、防风、防强电磁干扰和防雨等能力的建筑内。机房采用综合接地系统，直流、交流电接地" />
+        <String Key="SmallRoom-cd" Value="机房应选择具有防雷、防风、防强电磁干扰和防雨等能力的建筑内。机房采用综合接地系统，直流、交流电接地" />
+        <String Key="SDNServer_EquTypeDes" Value="产品类型：机架式2U服务器
+处理器：core-i7
+CPU频率：3.6GHz
+安装内存：16G
+磁盘容量：2T
+系统类型：IUV_OS(基于LINUX)
+安装软件：IUV_controller V1.0.0（基于ODL）
+控制器采用OSGI（Open Service Getway Initiative）框架，OSGI框架是面向Java的动态模型系统，它实现了一个优雅、完整和动态的组件模型。
+应用模块（Application Modules）完成简单转发，负载均衡等业务部署。其中的网络服务功能模块（Network Service Functional Modules）完成拓扑管理，资产管理和转发规则管理等内容。
+同时，ODL控制平台引入了SAL，SAL的北向连接功能模块，以插件的形式为底层设备提供服务；SAL的南向支持多种接口协议，屏蔽不同协议的差异性，为上层功能模块提供一致性服务，使得上层模块与下层模块之间的调用相互隔离。
+SAL可自动适配底层不同设备，使开发者专注于业务应用的开发。" />
+        <String Key="PC_EquTypeDes" Value="PC终端和服务器
+产品类型：通用企业级终端设备
+处理器：core-i7
+CPU频率：3.6GHz
+安装内存：8G
+磁盘容量：1T
+系统类型：IUV_OS(基于LINUX)" />
+        <String Key="LargeRoom-area" Value="约200平方米" />
+        <String Key="LargeRoom-jg" Value="大型机房最多可拖放4个19英寸标准机柜，默认存在一个ODF机柜及一个NDF机柜" />
+        <String Key="LargeRoom-in" Value="空调六台、烟感器、监控、消防气瓶、UPS电源柜、直流电源柜" />
+        <String Key="LargeRoom-hj" Value="机房温度保持在23℃±5℃，相对湿度保持在45-65%" />
+        <String Key="LargeRoom-cd" Value="机房应选择具有防雷、防风、防强电磁干扰和防雨等能力的建筑内。机房采用综合接地系统，直流、交流电接地" />
+        <String Key="ModeSelection.Frame.SceneDescription" Value="请选择你要开始的模式" />
+        <String Key="ModeSelection.Frame.BackBtn" Value="返 回" />
+        <String Key="ModeSelection.ModeDescription.ModeName" Value="模式名" />
+        <String Key="ModeSelection.ModeDescription.ModeDetail" Value="模式的描述信息" />
+        <String Key="ModeSelection.ModeBtn.FreeMode.BtnName" Value="自由模式" />
+        <String Key="ModeSelection.ModeBtn.FreeMode.ModeName" Value="自由模式" />
+        <String Key="ModeSelection.ModeBtn.FreeMode.ModeDesc" Value="自由模式的描述" />
+        <String Key="ModeSelection.ModeBtn.LevelMode.BtnName" Value="闯关模式" />
+        <String Key="ModeSelection.ModeBtn.LevelMode.ModeName" Value="闯关模式" />
+        <String Key="ModeSelection.ModeBtn.LevelMode.ModeDesc" Value="闯关模式的描述" />
+        <String Key="ModeSelection.MapName.LevelMap1" Value="闯关模式大地图1" />
+        <String Key="ModeSelection.MapName.LevelMap2" Value="闯关模式大地图2" />
+        <String Key="ModeSelection.MapName.LevelMap3" Value="闯关模式大地图3" />
+        <String Key="ModeSelection.ModeBtn.SportsMode.BtnName" Value="竞技模式" />
+        <String Key="ModeSelection.ModeBtn.SportsMode.ModeName" Value="竞技模式" />
+        <String Key="ModeSelection.ModeBtn.SportsMode.ModeDesc" Value="竞技模式的描述" />
+        <String Key="ModeSelection.ModeBtn.EvaluationMode.BtnName" Value="测评模式" />
+        <String Key="ModeSelection.ModeBtn.EvaluationMode.ModeName" Value="测评模式" />
+        <String Key="ModeSelection.ModeBtn.EvaluationMode.ModeDesc" Value="测评模式的描述" />
+        <String Key="ModeSelection.ModeBtn.TeachingAids.BtnName" Value="教辅功能" />
+        <String Key="ModeSelection.ModeBtn.TeachingAids.ModeName" Value="教辅功能" />
+        <String Key="ModeSelection.ModeBtn.TeachingAids.ModeDesc" Value="教辅功能的描述" />
+        <String Key="SceneSelection.SceneName.School" Value="学校" />
+        <String Key="SceneSelection.SceneName.Goverment" Value="政府" />
+        <String Key="SceneSelection.SceneName.Residence" Value="住宅" />
+        <String Key="EquipParam.Name.interface" Value="接口" />
+        <String Key="EquipParam.Name.phyintercae" Value="物理接口" />
+        <String Key="EquipParam.Name.subinterface" Value="子接口" />
+        <String Key="EquipParam.Name.Loopback" Value="loopback" />
+        <String Key="EquipParam.Name.staticroute" Value="静态路由" />
+        <String Key="EquipParam.Name.ospfroute" Value="OSPF路由" />
+        <String Key="EquipParam.Name.dhcp" Value="DHCP" />
+        <String Key="EquipParam.Name.dhcpglobal" Value="DHCP全局" />
+        <String Key="EquipParam.Name.dhcpinterface" Value="DHCP接口" />
+        <String Key="EquAtt.HardwareSetup" Value="硬件安装" />
+        <String Key="EquAtt.DataSetting" Value="数据配置" />
+        <String Key="EquAtt.Debug" Value="业务调试" />
+        <String Key="EquAtt.SelfAlarm" Value="本机告警" />
+        <String Key="EquAtt.DataSet.BtnName.Confirm" Value="确认" />
+        <String Key="EquAtt.DataSet.BtnName.Reset" Value="重置" />
+        <String Key="EquAtt.DataSet.BtnName.Delete" Value="删除" />
+        <String Key="EquAtt.DataSet.NodeName.PORT" Value="接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.Port_Phy" Value="物理接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.Port_Sub" Value="子接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.Port_LoopBack" Value="Loopback接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.StaticRouting" Value="静态路由配置" />
+        <String Key="EquAtt.DataSet.NodeName.ACL" Value="ACL配置" />
+        <String Key="EquAtt.DataSet.NodeName.ACL_Standard" Value="标准ACL" />
+        <String Key="EquAtt.DataSet.NodeName.ACL_Extend" Value="扩展ACL" />
+        <String Key="EquAtt.DataSet.NodeName.ACL_Port" Value="ACL接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.ACL_Level2" Value="二层ACL配置" />
+        <String Key="EquAtt.DataSet.NodeName.DHCP" Value="DHCP配置" />
+        <String Key="EquAtt.DataSet.NodeName.DHCP_Global" Value="DHCP全局配置" />
+        <String Key="EquAtt.DataSet.NodeName.DHCP_Port" Value="DHCP接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.NAT" Value="NAT配置" />
+        <String Key="EquAtt.DataSet.NodeName.NAT_Global" Value="NAT全局配置" />
+        <String Key="EquAtt.DataSet.NodeName.NAT_Port" Value="NAT接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.OSPF" Value="OSPF配置" />
+        <String Key="EquAtt.DataSet.NodeName.OspfRoute" Value="" />
+        <String Key="EquAtt.DataSet.NodeName.OspfArea" Value="OSPF区域配置" />
+        <String Key="EquAtt.DataSet.NodeName.OspfGlobal" Value="OSPF全局配置" />
+        <String Key="EquAtt.DataSet.NodeName.OspfPort" Value="OSPF接口配置" />
+        <String Key="EquAtt.DataSet.NodeName.Port_VlanLevel3" Value="VLAN三层接口配置" />
+        <String Key="EquAtt.Debug.Type.Debug" Value="业务调测" />
+        <String Key="EquAtt.Debug.Type.Ping" Value="Ping" />
+        <String Key="EquAtt.Debug.Type.Trace" Value="Trace" />
+        <String Key="EquAtt.Debug.Type.State" Value="状态查询" />
+        <String Key="EquAtt.Debug.Type.PortState" Value="接口状态" />
+        <String Key="EquAtt.Debug.Type.ArpTable" Value="ARP表" />
+        <String Key="EquAtt.Debug.Type.RoutingTable" Value="路由表" />
+        <String Key="EquAtt.Debug.Type.OspfState" Value="OSPF状态" />
+        <String Key="EquAtt.Debug.Type.NatState" Value="NAT状态" />
+        <String Key="EquAtt.Debug.Type.AclState" Value="ACL状态" />
+        <String Key="EquAtt.Debug.Type.DhcpState" Value="DHCP状态" />
+        <String Key="EquAtt.Debug.Type.MacTable" Value="Mac地址表" />
+        <String Key="EquAtt.Debug.Type.VlanDatebase" Value="VLAN数据库" />
+        <String Key="EquAtt.Debug.Type.VlanLevel3Port" Value="VLAN三层接口表" />
+        <String Key="EquAtt.Debug.Ping.DesIp" Value="目的IP" />
+        <String Key="EquAtt.Debug.Ping.SrcIp" Value="源IP" />
+        <String Key="EquAtt.Debug.Ping.Bytes" Value="字节数" />
+        <String Key="EquAtt.Debug.Ping.Times" Value="次数" />
+        <String Key="EquAtt.Debug.Ping.Excute" Value="执行" />
+        <String Key="person.center.Title.Trainee" Value="实习员工" />
+        <String Key="person.center.Title.Assistant" Value="助理专员" />
+        <String Key="person.center.Title.Commissioner" Value="专员" />
+        <String Key="person.center.Title.Executive Assistant" Value="主管助理" />
+        <String Key="person.center.Title.Director" Value="主管" />
+        <String Key="person.center.Title.Middle director" Value="中级主管" />
+        <String Key="person.center.Title.Senior Director" Value="高级主管" />
+        <String Key="person.center.Title.Assistant manager" Value="助理经理" />
+        <String Key="person.center.Title.Manager" Value="经理" />
+        <String Key="person.center.Title.Senior Manager" Value="高级经理" />
+        <String Key="person.center.Title.DGM" Value="副总" />
+        <String Key="person.center.Title.GM" Value="总经理" />
+        <String Key="DebugType.Debug" Value="业务调测" />
+        <String Key="DebugType.Ping" Value="Ping" />
+        <String Key="DebugType.Trace" Value="Trace" />
+        <String Key="DebugType.State" Value="状态查询" />
+        <String Key="DebugType.PortState" Value="接口状态" />
+        <String Key="DebugType.ArpTable" Value="ARP表" />
+        <String Key="DebugType.RoutingTable" Value="路由表" />
+        <String Key="DebugType.OspfState" Value="OSPF状态" />
+        <String Key="DebugType.NatState" Value="NAT状态" />
+        <String Key="DebugType.AclState" Value="ACL状态" />
+        <String Key="DebugType.DhcpState" Value="DHCP状态" />
+        <String Key="DebugType.MacTable" Value="Mac地址表" />
+        <String Key="DebugType.VlanDatebase" Value="VLAN数据库" />
+        <String Key="DebugType.VlanLevel3Port" Value="VLAN三层接口表" />
+        <String Key="DebugType.VSIState" Value="VSI实例状态" />
+        <String Key="DebugType.VXLANTunnel" Value="VXLAN隧道状态" />
+        <String Key="DebugType.VTEP" Value="VTEP表项" />
+        <String Key="DebugType.bdOpenFlowLinkState" Value="OpenFlow连接状态" />
+        <String Key="DebugType.bdControllerState" Value="控制器状态" />
+        <String Key="DebugType.VSIMAC" Value="MAC地址表" />
+        <String Key="DebugType.VSIARP" Value="ARP表" />
+        <String Key="DebugType.VSIRoute" Value="VRF路由表" />
+        <String Key="Debug.Ping.DesIp" Value="目的IP" />
+        <String Key="Debug.Ping.SrcIp" Value="源IP" />
+        <String Key="Debug.Ping.Bytes" Value="字节数" />
+        <String Key="Debug.Ping.Times" Value="次数" />
+        <String Key="Debug.Ping.Excute" Value="执行" />
+        <String Key="Topo.NeedRemoveEquip" Value="设备/线缆已经完成工程安装，请确认在工程模式下移除设备，再进行删除操作" />
+        <String Key="INTERFACE_VLAN" Value="物理接口+VLAN" />
+    </Dictionary>
+</Dictionaries>
