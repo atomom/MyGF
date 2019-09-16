@@ -14,7 +14,7 @@ namespace IUV.SDN
 {
     public static class DataTableExtension
     {
-        private const string DataRowClassPrefixName = "IUV.SDN";
+        private const string DataRowClassPrefixName = "IUV.SDN.";
         internal static readonly char[] DataSplitSeparators = new char[] { '\t' };
         internal static readonly char[] DataTrimSeparators = new char[] { '\"' };
 

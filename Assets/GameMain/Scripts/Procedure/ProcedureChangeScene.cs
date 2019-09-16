@@ -54,7 +54,7 @@ namespace IUV.SDN
             // 还原游戏速度
             GameEntry.Base.ResetNormalGameSpeed();
 
-            m_SceneId = procedureOwner.GetData<VarInt>(Constant.SDNKey.NextSceneId).Value;
+            m_SceneId = procedureOwner.GetData<VarInt>(Constant.CommonKey.NextSceneId).Value;
             IDataTable<DRScene> dtScene = GameEntry.DataTable.GetDataTable<DRScene>();
             DRScene drScene = dtScene.GetDataRow(m_SceneId);
             if (drScene == null)
@@ -85,15 +85,7 @@ namespace IUV.SDN
             {
                 return;
             }
-
-            switch (m_SceneId)
-            {
-                case (int) SceneId.Login:
-                    ChangeState<ProcedureLogin>(procedureOwner);
-                    break;
-                default:
-                    break;
-            }
+            ChangeState<ProcedureLoadScene>(procedureOwner);
         }
 
         private void OnLoadSceneSuccess(object sender, GameEventArgs e)

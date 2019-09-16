@@ -11,7 +11,7 @@ namespace IUV.SDN
 
         public static string GetDataTableAsset(string assetName, LoadType loadType)
         {
-            return string.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, loadType == LoadType.Text ? "txt" : "bytes");
+            return string.Format("Assets/GameMain/DataTables/{0}.{1}", assetName, loadType == LoadType.Text ? "csv" : "bytes");
         }
 
         public static string GetDictionaryAsset(string assetName, LoadType loadType)

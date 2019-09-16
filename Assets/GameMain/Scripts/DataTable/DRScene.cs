@@ -53,6 +53,16 @@ namespace IUV.SDN
             get;
             private set;
         }
+        public int FormId
+        {
+            get;
+            private set;
+        }
+        public int NextSceneId
+        {
+            get;
+            private set;
+        }
 
         public override bool ParseDataRow(GameFrameworkSegment<string> dataRowSegment)
         {
@@ -69,14 +79,17 @@ namespace IUV.SDN
             index++;
             AssetName = columnTexts[index++];
             BackgroundMusicId = int.Parse(columnTexts[index++]);
+            FormId = int.Parse(columnTexts[index++]);
+            NextSceneId = int.Parse(columnTexts[index++]);
 
             GeneratePropertyArray();
             return true;
         }
 
         public override bool ParseDataRow(GameFrameworkSegment<byte[]> dataRowSegment)
-        { HashSet<int> ss = new HashSet<int>();
-        
+        {
+            HashSet<int> ss = new HashSet<int>();
+
             // Star Force 示例代码，正式项目使用时请调整此处的生成代码，以处理 GCAlloc 问题！
             using(MemoryStream memoryStream = new MemoryStream(dataRowSegment.Source, dataRowSegment.Offset, dataRowSegment.Length, false))
             {
@@ -85,6 +98,8 @@ namespace IUV.SDN
                     m_Id = binaryReader.ReadInt32();
                     AssetName = binaryReader.ReadString();
                     BackgroundMusicId = binaryReader.ReadInt32();
+                    FormId = binaryReader.ReadInt32();
+                    NextSceneId = binaryReader.ReadInt32();
                 }
             }
 

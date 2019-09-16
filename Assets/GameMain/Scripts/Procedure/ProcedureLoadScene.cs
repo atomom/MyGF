@@ -5,10 +5,10 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace IUV.SDN
 {
-    public class ProcedureLogin : ProcedureBase
+    public class ProcedureLoadScene : ProcedureBase
     {
         private bool m_Open = false;
-        private bool m_StartTopo = false;
+        private bool m_Next = false;
 
         public override bool UseNativeDialog
         {
@@ -18,9 +18,9 @@ namespace IUV.SDN
             }
         }
 
-        public void StartTopo()
+        public void Next()
         {
-            m_StartTopo = true;
+            m_Next = true;
         }
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
@@ -28,8 +28,7 @@ namespace IUV.SDN
             base.OnEnter(procedureOwner);
 
             GameEntry.Event.Subscribe(OpenUIFormSuccessEventArgs.EventId, OnOpenUIFormSuccess);
-
-            m_StartTopo = false;
+            m_Next = false;
             m_Open = false;
         }
 
@@ -47,15 +46,30 @@ namespace IUV.SDN
             if (m_Open == false)
             {
                 m_Open = true;
-                GameEntry.UI.OpenUIForm(UIFormId.LoginForm, this);
+                int m_SceneId = procedureOwner.GetData<VarInt>(Constant.CommonKey.NextSceneId).Value;
+                IDataTable<DRScene> dtScene = GameEntry.DataTable.GetDataTable<DRScene>();
+                DRScene drScene = dtScene.GetDataRow(m_SceneId);
+                if (drScene == null)
+                {
+                    Log.Warning("Can not load scene '{0}' from data table.", m_SceneId.ToString());
+                    return;
+                }
+                var formId = drScene.FormId;
+                if (formId > -1)
+                {
+                    GameEntry.UI.OpenUIForm(formId, this);
+                }
+                else
+                {
+                    var nextSceneId = drScene.NextSceneId;
+                    procedureOwner.SetData<VarInt>(Constant.CommonKey.NextSceneId, nextSceneId);
+                    ChangeState<ProcedureChangeScene>(procedureOwner);
+                }
             }
-            if (m_StartTopo)
+            if (m_Next)
             {
-                m_StartTopo = false;
+                m_Next = false;
                 m_Open = false;
-                procedureOwner.SetData<VarInt>(Constant.SDNKey.NextSceneId, GameEntry.Config.GetInt(Constant.SDNKey.SceneTopo));
-                procedureOwner.SetData<VarInt>(Constant.SDNKey.GameMode, (int) GameMode.Survival);
-                procedureOwner.SetData<VarBool>(Constant.SDNKey.SaveMain, true);
                 ChangeState<ProcedureChangeScene>(procedureOwner);
             }
         }

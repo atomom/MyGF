@@ -12,7 +12,7 @@ namespace IUV.SDN
 {
     public class ProcedurePreload : ProcedureBase
     {
-        string[] datas = new string[] { "DRMusic", "DRScene", "DRSound", "DRUIForm", "DRUISound", "AuthConfig", "PortConfig", "BoardConfig", "BuildConfig", "EquipConfig", "LineConfig", "ModeConfig", "ModeMapConfig", "RackConfig", "RoomConfig", "SceneConfig", "ParamTableConfig", "DebugConfig", "ErrorMsgConfig" };
+        string[] datas = new string[] { "DRMusic", "DRScene", "DRSound", "DRUIForm", "DRUISound" };
         private Dictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();
 
         public override bool UseNativeDialog
@@ -63,9 +63,6 @@ namespace IUV.SDN
                     return;
                 }
             }
-
-            procedureOwner.SetData<VarInt>(Constant.SDNKey.NextSceneId, GameEntry.Config.GetInt(Constant.SDNKey.SceneLogin));
-            ChangeState<ProcedureChangeScene>(procedureOwner);
         }
 
         private void PreloadResources()
@@ -96,7 +93,7 @@ namespace IUV.SDN
             GRoot.inst.SetContentScaleFactor(designResolutionX: Constant.UI.Width, designResolutionY: Constant.UI.Height, screenMatchMode: UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);
             GameEntry.FGUIData.ClearFGui();
 
-            var fguiModels = new string[] { "common", "top", "scene3d" };
+            var fguiModels = new string[] { };
             for (int i = 0, n = fguiModels.Length; i < n; ++i)
             {
                 var fguimodel = fguiModels[i];

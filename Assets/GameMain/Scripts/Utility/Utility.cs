@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using GameFramework;
 using ICSharpCode.SharpZipLib.Zip;
 using UnityEngine;
 using UnityGameFramework.Runtime;
