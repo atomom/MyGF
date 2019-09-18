@@ -6,8 +6,10 @@ namespace IUV.SDN
     {
         public static class CommonKey
         {
-            public const string NextSceneId = "NextSceneId";
             public const string CurrentScene = "CurrentScene";
+            public const string NextSceneId = "NextSceneId";
+            public const string SceneLogin = "Scene.Login";
+
         }
     }
 }

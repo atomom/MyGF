@@ -20,6 +20,9 @@
             public const int UIFormAsset = 50;
             public const int UISoundAsset = 30;
 
+            public const int MyHumanAsset = 90;
+            public const int HumanAsset = 80;
+
         }
     }
 }

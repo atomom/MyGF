@@ -63,6 +63,9 @@ namespace IUV.SDN
                     return;
                 }
             }
+            //Config是读取的配置文件 DefaultConfig.txt
+            procedureOwner.SetData<VarInt>(Constant.CommonKey.NextSceneId, GameEntry.Config.GetInt(Constant.CommonKey.SceneLogin));
+            ChangeState<ProcedureChangeScene>(procedureOwner);
         }
 
         private void PreloadResources()

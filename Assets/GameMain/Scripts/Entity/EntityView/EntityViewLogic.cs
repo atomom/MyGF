@@ -1,10 +1,17 @@
-﻿using GameFramework;
+﻿//------------------------------------------------------------
+// Game Framework
+// Copyright © 2013-2019 Jiang Yin. All rights reserved.
+// Homepage: http://gameframework.cn/
+// Feedback: mailto:jiangyin@gameframework.cn
+//------------------------------------------------------------
+
+using GameFramework;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace IUV.SDN
 {
-    public abstract class Entity : EntityLogic
+    public abstract class EntityViewLogic : EntityLogic
     {
         [SerializeField]
         private EntityData m_EntityData = null;
@@ -48,7 +55,7 @@ namespace IUV.SDN
                 return;
             }
 
-            Name = string.Format("[Entity {0}]", Id.ToString());
+            Name = GameFramework.Utility.Text.Format("[Entity {0}]", Id.ToString());
             CachedTransform.localPosition = m_EntityData.Position;
             CachedTransform.localRotation = m_EntityData.Rotation;
             CachedTransform.localScale = Vector3.one;

@@ -99,6 +99,11 @@ namespace IUV.SDN
         public override void ForceRefresh(object userData)
         {
             UserDialogParams = userData as DialogParams;
+            if (UserDialogParams == null)
+            {
+                return;
+            }
+
             Title = UserDialogParams.Title == null ? Title : UserDialogParams.Title;
             Mode = UserDialogParams.Mode == 0 ? 2 : UserDialogParams.Mode;
             Mode = Mathf.Min(Mathf.Max(1, Mode), 2);

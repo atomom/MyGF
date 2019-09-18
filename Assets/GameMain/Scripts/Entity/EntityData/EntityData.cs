@@ -1,13 +1,12 @@
 ﻿using System;
+using GameFramework;
 using UnityEngine;
 
 namespace IUV.SDN
 {
     [Serializable]
-    public abstract class EntityData
+    public abstract class EntityData : BaseData
     {
-        [SerializeField]
-        private int m_Id = 0;
 
         [SerializeField]
         private int m_TypeId = 0;
@@ -17,22 +16,9 @@ namespace IUV.SDN
 
         [SerializeField]
         private Quaternion m_Rotation = Quaternion.identity;
-
-        public EntityData(int entityId, int typeId)
+        public EntityData()
         {
-            m_Id = entityId;
-            m_TypeId = typeId;
-        }
 
-        /// <summary>
-        /// 实体编号。
-        /// </summary>
-        public int Id
-        {
-            get
-            {
-                return m_Id;
-            }
         }
 
         /// <summary>
@@ -43,6 +29,10 @@ namespace IUV.SDN
             get
             {
                 return m_TypeId;
+            }
+            set
+            {
+                m_TypeId = value;
             }
         }
 

@@ -33,6 +33,22 @@
             private set;
         }
 
+        public static CacheServerComponent Cache
+        {
+            get;
+            private set;
+        }
+        public static DataServerComponent DataServer
+        {
+            get;
+            private set;
+        }
+        public static DataLocalComponent DataLocal
+        {
+            get;
+            private set;
+        }
+
         private static void InitCustomComponents()
         {
             FGUIData = UnityGameFramework.Runtime.GameEntry.GetComponent<FGUIComponent>();
@@ -40,6 +56,9 @@
             Timer = UnityGameFramework.Runtime.GameEntry.GetComponent<TimerComponent>();
             Input = UnityGameFramework.Runtime.GameEntry.GetComponent<InputComponent>();
             Camera = UnityGameFramework.Runtime.GameEntry.GetComponent<CameraComponent>();
+            Cache = UnityGameFramework.Runtime.GameEntry.GetComponent<CacheServerComponent>();
+            DataServer = UnityGameFramework.Runtime.GameEntry.GetComponent<DataServerComponent>();
+            DataLocal = UnityGameFramework.Runtime.GameEntry.GetComponent<DataLocalComponent>();
         }
     }
 }
