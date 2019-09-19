@@ -4,6 +4,11 @@ namespace IUV.SDN
 {
     public class HumanData : TargetableObjectData
     {
+        public HumanData()
+        {
+
+        }
+
         [SerializeField]
         private int m_MaxHP = 0;
         public HumanData(CampType camp) : base(camp) { }

@@ -13,6 +13,11 @@ namespace IUV.SDN
     [Serializable]
     public abstract class TargetableObjectData : MyEntityData
     {
+        public TargetableObjectData()
+        {
+
+        }
+
         [SerializeField]
         private CampType m_Camp = CampType.Unknown;
 

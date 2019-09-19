@@ -13,6 +13,11 @@ namespace IUV.SDN
     [Serializable]
     public abstract class AccessoryObjectData : MyEntityData
     {
+        public AccessoryObjectData()
+        {
+
+        }
+
         [SerializeField]
         private int m_OwnerId = 0;
         private TargetableObjectData m_OwnerData;

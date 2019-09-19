@@ -10,6 +10,8 @@ namespace IUV.SDN
             public const string NextSceneId = "NextSceneId";
             public const string SceneLogin = "Scene.Login";
 
+            public const string DBName = "mygame";
+
         }
     }
 }

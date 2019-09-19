@@ -4,8 +4,12 @@ using UnityEngine;
 namespace IUV.SDN
 {
     [Serializable]
-    public abstract class BaseData
+    public class BaseData
     {
+        public BaseData()
+        {
+
+        }
 
         [SerializeField]
         private int m_Id = 0;

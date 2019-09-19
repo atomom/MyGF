@@ -1,21 +1,23 @@
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace IUV.SDN
 {
-    public interface IDataServer<T>
+    public interface IDataServer<T> where T : BaseData
     {
-        bool Add(T t);
-        T Find(int id);
-        T Update(T t);
 
-        bool Delete(int id);
+        int Delete(T t);
 
-        void BatchAdd(List<T> datas);
+        int Add(T t);
 
-        void BatchUpdate(List<T> datas);
+        int BatchAdd(List<T> datas);
 
-        void BatchRemove(List<int> datas);
+        int BatchRemove(List<T> datas);
 
-        List<T> Find(string sql);
+        int BatchUpdate(List<T> datas);
+        List<T> Find(Expression<Func<T, bool>> predicate, int i);
+
+        int Update(T t);
     }
 }
